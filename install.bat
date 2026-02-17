@@ -57,9 +57,11 @@ goto FABRIC
 
 :EOERR
     echo "[!] Erreur lors de l'installation. Envoyer moi l'erreur en privé"
+    pause
     exit /b 1
 
 
 :EOF
     echo "[V] Installation réussi"
+    pause
     exit /b 0
