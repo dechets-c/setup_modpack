@@ -1,5 +1,5 @@
 java --version
-if errorlevel  goto ERROR
+if errorlevel 1 goto ERROR
 goto FABRIC
 
 :ERROR
@@ -19,7 +19,7 @@ goto FABRIC
     echo "Début installation Fabric"
     java -jar fabric.jar client -dir "%userprofile%\AppData\Roaming\.minecraft"
 
-    if errorlevel goto EOERR
+    if errorlevel 1 goto EOERR
 
     del fabric.jar
 
